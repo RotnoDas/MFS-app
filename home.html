@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payoo | Home</title>
+    <!-- Tailwind + DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/afae3d2134.js" crossorigin="anonymous"></script>
+
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>Home page</h1>
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <header class="border-b-2 border-gray-300 bg-[#FFFFFF]">
+        <section class="flex justify-between items-center px-4 py-2.5">
+            <div>
+                <p class="font-semibold text-[#000000]">9:41</p>
+            </div>
+            <div class="space-x-1 text-[#000000]">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </section>
+        <section class="w-full mx-auto px-[25px] py-2.5 flex justify-between items-center">
+            <div class="left flex justify-between items-center space-x-4">
+                <div class="logo w-[60px]">
+                    <img src="./assets/logo.png" alt="logo">
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-[18px] leading-[auto] tracking-[0%] text-[#080808]"><i class="ri-money-dollar-circle-line"></i><span>45000</span></h1>
+                    <p class="font-normal text-[14px] leading-[auto] tracking-[0%] text-[#08080880]">Available Balance</p>
+                </div>
+            </div>
+            <div class="right">
+                <a href="./index.html" class="btn btn-soft px-3 py-[9px] space-x-1 border border-[#0808081a] rounded-lg bg-transparent font-normal text-[14px] leading-[auto] tracking-[0%] text-[#08080880] hover:bg-red-500 hover:text-[#FFFFFF]"><i class="ri-logout-box-line"></i><span>Log Out</span></a>
+            </div>
+        </section>
+    </header>
+    <main class="bg-[#FFFFFF] px-[25px] py-8 space-y-5 rounded-b-4xl">
+        <div class="space-y-2.5">
+            <h1 class="font-bold text-[24px] leading-8 tracking-[0%] text-[#080808]">Welcome to Pay<span class="text-primary">oo</span></h1>
+            <p class="font-normal text-[14px] leading-[auto] tracking-[0%] text-[#08080880]">Enjoy easy and convenient financial services with us. Cash out charge is low and fast.</p>
+        </div>
+        <div class="buttons grid grid-cols-3 gap-3">
+            <button class="btn flex flex-col items-center space-y-1 btn-primary btn-soft border-none rounded-lg px-3 py-4 h-full">
+                <img src="./assets/opt-1.png" alt="">
+                <p>Add Money</p>
+            </button>
+            <button class="btn flex flex-col items-center space-y-1 btn-primary btn-soft border-none rounded-lg px-3 py-4 h-full">
+                <img src="./assets/opt-2.png" alt="">
+                <p>Cash Out</p>
+            </button>
+            <button class="btn flex flex-col items-center space-y-1 btn-primary btn-soft border-none rounded-lg px-3 py-4 h-full">
+                <img src="./assets/opt-3.png" alt="">
+                <p>Transfer Money</p>
+            </button>
+            <button class="btn flex flex-col items-center space-y-1 btn-primary btn-soft border-none rounded-lg px-3 py-4 h-full">
+                <img src="./assets/opt-4.png" alt="">
+                <p>Get Bonus</p>
+            </button>
+            <button class="btn flex flex-col items-center space-y-1 btn-primary btn-soft border-none rounded-lg px-3 py-4 h-full">
+                <img src="./assets/opt-5.png" alt="">
+                <p>Pay Bill</p>
+            </button>
+            <button class="btn flex flex-col items-center space-y-1 btn-primary btn-soft border-none rounded-lg px-3 py-4 h-full">
+                <img src="./assets/opt-6.png" alt="">
+                <p>Transactions</p>
+            </button>
+        </div>
+    </main>
 </body>
 </html>
