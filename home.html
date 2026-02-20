@@ -86,6 +86,32 @@
         </div>
     </main>
 
+    <section class="addmoney mt-5">
+        <p class="px-6 text-xl font-bold mb-3">Add Money</p>
+        <div class="form w-full px-5 flex justify-center">
+            <div class="card bg-base-100 w-full shrink-0 shadow rounded-3xl p-2">
+                <div class="card-body">
+                    <fieldset class="fieldset space-y-2">
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Select A Bank</label>
+                        <select id="add-money-bank" class="select px-5 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0">
+                            <option disabled selected>Select Bank</option>
+                            <option value="BoA">Bank of America</option>
+                            <option value="JPMC">JPMorgan Chase</option>
+                            <option value="BoC">Bank of China</option>
+                        </select>
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Bank Account Number</label>
+                        <input id="add-money-account-number" type="text" maxlength="11" minlength="11" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter 11 digit Account number" value="12345678910" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Amount to Add</label>
+                        <input id="add-money-amount" type="text" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter amount to add" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Pin Number</label>
+                        <input id="add-money-pin" type="password" maxlength="4" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter 4 digit pin" value="1234" />
+                        <button id="add-money-button" class="btn btn-neutral mt-4 px-5 py-3.5 rounded-full bg-[#3B25C1] font-semibold text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF] outline-none border-0 hover:bg-green-500">Add Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cashout mt-5">
         <p class="px-6 text-xl font-bold mb-3">Cash Out</p>
         <div class="form w-full px-5 flex justify-center">
@@ -106,5 +132,6 @@
     </section>
 
     <script src="./script/cashout.js"></script>
+    <script src="./script/addmoney.js"></script>
 </body>
 </html>
