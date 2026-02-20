@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo | Home</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- Tailwind + DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -43,7 +44,7 @@
                     <img src="./assets/logo.png" alt="logo">
                 </div>
                 <div>
-                    <h1 class="font-extrabold text-[18px] leading-[auto] tracking-[0%] text-[#080808]"><i class="ri-money-dollar-circle-line"></i><span>45000</span></h1>
+                    <h1 class="font-extrabold text-[18px] leading-[auto] tracking-[0%] text-[#080808]"><i class="ri-money-dollar-circle-line"></i><span id="balance">45000</span></h1>
                     <p class="font-normal text-[14px] leading-[auto] tracking-[0%] text-[#08080880]">Available Balance</p>
                 </div>
             </div>
@@ -84,5 +85,26 @@
             </button>
         </div>
     </main>
+
+    <section class="cashout mt-5">
+        <p class="px-6 text-xl font-bold mb-3">Cash Out</p>
+        <div class="form w-full px-5 flex justify-center">
+            <div class="card bg-base-100 w-full shrink-0 shadow rounded-3xl p-2">
+                <div class="card-body">
+                    <fieldset class="fieldset space-y-2">
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Agent Number</label>
+                        <input id="cashout-number" type="text" maxlength="11" minlength="11" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter your number" value="01666666666" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Amount</label>
+                        <input id="amount" type="text" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter amount to withdraw" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Pin Number</label>
+                        <input id="cashout-pin" type="password" maxlength="4" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter 4 digit pin" value="1234" />
+                        <button id="cashout-button" class="btn btn-neutral mt-4 px-5 py-3.5 rounded-full bg-[#3B25C1] font-semibold text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF] outline-none border-0 hover:bg-green-500">Withdraw Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script/cashout.js"></script>
 </body>
 </html>

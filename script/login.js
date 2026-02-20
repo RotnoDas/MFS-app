@@ -7,7 +7,7 @@ loginButton.addEventListener('click', function () {
     const inputPin = document.getElementById('input-pin');
     const pin = inputPin.value;
     // validate the number and pin
-    if (number === '01757411794' && pin === '1234') {
+    if (number === '01777777777' && pin === '1234') {
         alert('Login successful!');
         window.location.assign('./home.html');
     }
