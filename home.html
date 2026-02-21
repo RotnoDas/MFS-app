@@ -131,7 +131,71 @@
         </div>
     </section>
 
+    <section class="transfermoney mt-5">
+        <p class="px-6 text-xl font-bold mb-3">Transfer Money</p>
+        <div class="form w-full px-5 flex justify-center">
+            <div class="card bg-base-100 w-full shrink-0 shadow rounded-3xl p-2">
+                <div class="card-body">
+                    <fieldset class="fieldset space-y-2">
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">User Account Number</label>
+                        <input id="transfer-money-account-number" type="text" maxlength="11" minlength="11" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter 11 digit number" value="10987654321" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Amount</label>
+                        <input id="transfer-amount" type="text" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter amount to transfer" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Pin Number</label>
+                        <input id="transfer-money-pin" type="password" maxlength="4" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter 4 digit pin number" value="1234" />
+                        <button id="transfer-money-button" class="btn btn-neutral mt-4 px-5 py-3.5 rounded-full bg-[#3B25C1] font-semibold text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF] outline-none border-0 hover:bg-green-500">Send Now</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="getbonus mt-5">
+        <p class="px-6 text-xl font-bold mb-3">Get Bonus</p>
+        <div class="form w-full px-5 flex justify-center">
+            <div class="card bg-base-100 w-full shrink-0 shadow rounded-3xl p-2">
+                <div class="card-body">
+                    <fieldset class="fieldset space-y-2">
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Enter Bonus Coupon</label>
+                        <input id="bonus-coupon" type="text" maxlength="11" minlength="11" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter your coupon" value="get-500" />
+                        <button id="bonus-button" class="btn btn-neutral mt-4 px-5 py-3.5 rounded-full bg-[#3B25C1] font-semibold text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF] outline-none border-0 hover:bg-green-500">Get Bonus</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="paybill mt-5">
+        <p class="px-6 text-xl font-bold mb-3">Pay Bill</p>
+        <div class="form w-full px-5 flex justify-center">
+            <div class="card bg-base-100 w-full shrink-0 shadow rounded-3xl p-2">
+                <div class="card-body">
+                    <fieldset class="fieldset space-y-2">
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Select to Pay</label>
+                        <select id="bill-option" class="select px-5 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0">
+                            <option disabled selected>Select Now</option>
+                            <option value="IB">Internet Bill</option>
+                            <option value="EB">Electricity Bill</option>
+                            <option value="GB">Gas Bill</option>
+                        </select>
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Biller Account Number</label>
+                        <input id="biller-account-number" type="text" maxlength="11" minlength="11" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter Account number" value="56789101234" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Amount to Pay</label>
+                        <input id="bill-amount" type="text" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter amount to pay" />
+                        <label class="label font-medium text-[16px] leading-[auto] tracking-[0%] text-[#080808]">Pin Number</label>
+                        <input id="bill-pin" type="password" maxlength="4" class="input px-5 py-4 rounded-full bg-[#F4F5F7] font-light text-[16px] leading-[auto] tracking-[0%] outline-none w-full border-0" placeholder="Enter 4 digit pin" value="1234" />
+                        <button id="bill-button" class="btn btn-neutral mt-4 px-5 py-3.5 rounded-full bg-[#3B25C1] font-semibold text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF] outline-none border-0 hover:bg-green-500">Pay Now</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script/selector.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/addmoney.js"></script>
+    <script src="./script/transfermoney.js"></script>
+    <script src="./script/bonus.js"></script>
+    <script src="./script/bill.js"></script>
 </body>
 </html>
