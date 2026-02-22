@@ -3,12 +3,16 @@ const cashOutSection = document.getElementById('cash-out');
 const transferMoneySection = document.getElementById('transfer-money');
 const billSection = document.getElementById('bill');
 const bonusSection = document.getElementById('bonus');
+const transactionSection = document.getElementById('transactions-history');
+const show = document.getElementById('show');
 
 addMoneySection.classList.add('hidden');
 cashOutSection.classList.add('hidden');
 transferMoneySection.classList.add('hidden');
 billSection.classList.add('hidden');
 bonusSection.classList.add('hidden');
+transactionSection.classList.add('hidden');
+show.classList.remove('hidden');
 
 
 document.getElementById('grid-add-money').addEventListener('click', () => {
@@ -17,6 +21,8 @@ document.getElementById('grid-add-money').addEventListener('click', () => {
     transferMoneySection.classList.add('hidden');
     billSection.classList.add('hidden');
     bonusSection.classList.add('hidden');
+    transactionSection.classList.add('hidden');
+    show.classList.add('hidden');
 });
 
 document.getElementById('grid-cash-out').addEventListener('click', () => {
@@ -25,6 +31,8 @@ document.getElementById('grid-cash-out').addEventListener('click', () => {
     transferMoneySection.classList.add('hidden');
     billSection.classList.add('hidden');
     bonusSection.classList.add('hidden');
+    transactionSection.classList.add('hidden');
+    show.classList.add('hidden');
 });
 
 document.getElementById('grid-transfer-money').addEventListener('click', () => {
@@ -33,6 +41,8 @@ document.getElementById('grid-transfer-money').addEventListener('click', () => {
     transferMoneySection.classList.remove('hidden');
     billSection.classList.add('hidden');
     bonusSection.classList.add('hidden');
+    transactionSection.classList.add('hidden');
+    show.classList.add('hidden');
 });
 
 document.getElementById('grid-pay-bill').addEventListener('click', () => {
@@ -41,6 +51,8 @@ document.getElementById('grid-pay-bill').addEventListener('click', () => {
     transferMoneySection.classList.add('hidden');
     billSection.classList.remove('hidden');
     bonusSection.classList.add('hidden');
+    transactionSection.classList.add('hidden');
+    show.classList.add('hidden');
 });
 
 document.getElementById('grid-get-bonus').addEventListener('click', () => {
@@ -49,4 +61,16 @@ document.getElementById('grid-get-bonus').addEventListener('click', () => {
     transferMoneySection.classList.add('hidden');
     billSection.classList.add('hidden');
     bonusSection.classList.remove('hidden');
+    transactionSection.classList.add('hidden');
+    show.classList.add('hidden');
+});
+
+document.getElementById('grid-transactions').addEventListener('click', () => {
+    addMoneySection.classList.add('hidden');
+    cashOutSection.classList.add('hidden');
+    transferMoneySection.classList.add('hidden');
+    billSection.classList.add('hidden');
+    bonusSection.classList.add('hidden');
+    transactionSection.classList.remove('hidden');
+    show.classList.add('hidden');
 });

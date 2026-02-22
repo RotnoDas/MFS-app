@@ -191,6 +191,73 @@
         </div>
     </section>
 
+    <section id="transactions-history" class="transactions mt-5 px-4">
+        <div class="flex justify-between items-center mb-3">
+            <p class="text-xl font-bold">Transaction History</p>
+            <p class="font-normal text-[14px] leading-[auto] tracking-[0%] text-[#08080880]">View All</p>
+        </div>
+        <div id="out">
+            <div class="flex w-full flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="skeleton h-16 w-16 shrink-0 rounded-full"></div>
+                        <div class="flex flex-col gap-4">
+                            <div class="skeleton h-4 w-20"></div>
+                            <div class="skeleton h-4 w-28"></div>
+                        </div>
+                </div>
+                <div class="skeleton h-32 w-full"></div>
+            </div>
+        </div>
+        <ul id="history-container" class="list bg-base-100 rounded-box">
+            <!-- <li class="list-row flex justify-between items-center">
+                <div class="flex items-center justify-between gap-2.5">
+                    <div class="bg-[#0808080d] rounded-full p-2">
+                        <img class="size-10 rounded-box" src="./assets/opt-1.png"/>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#080808b3]">Electricity Bill</div>
+                        <div class="text-xs font-normal leading-[auto] tracking-[0%] text-[#080808b3]">Remaining Reason</div>
+                    </div>
+                </div>
+                <div class="w-6 h-6">
+                    <i class="fa-solid fa-ellipsis-vertical w-full h-full"></i>
+                </div>
+            </li> -->
+        </ul>
+    </section>
+
+    <section id="show" class="transactions mt-5 px-4">
+        <div class="flex justify-between items-center mb-3">
+            <p class="text-xl font-bold">Latest Payments</p>
+            <p class="font-normal text-[14px] leading-[auto] tracking-[0%] text-[#08080880]">View All</p>
+        </div>
+        <div>
+            <div class="flex w-full flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="skeleton h-16 w-16 shrink-0 rounded-full"></div>
+                        <div class="flex flex-col gap-4">
+                            <div class="skeleton h-4 w-20"></div>
+                            <div class="skeleton h-4 w-28"></div>
+                        </div>
+                </div>
+                <div class="skeleton h-32 w-full"></div>
+            </div>
+            <p class="text-xl font-bold mt-5 text-center">Start Transaction</p>
+            <div class="w-full flex justify-center mt-5">
+                <span class="text-rotate text-7xl">
+                <span class="justify-items-center">
+                    <span>Add Money</span>
+                    <span>Cash Out</span>
+                    <span>Pay Bill</span>
+                    <span>Get Bonus</span>
+                    <span>Transfer</span>
+                    <span>Money</span>
+                </span>
+            </span>
+            </div>
+        </div>
+    </section>
+
     <script src="./script/selector.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/addmoney.js"></script>
